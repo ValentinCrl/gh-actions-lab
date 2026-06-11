@@ -14,3 +14,8 @@ jobs:
         run: |
           echo "La date actuelle est : $(date)"
           # Add your actual script commands here
+
+      - name: valeur du contexte
+        run: |
+          echo "La valeur du contexte est : ${{ github.actor }}""
+          # Add your actual script commands here
