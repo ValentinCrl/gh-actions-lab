@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: valeur-du-contexte
         run: |
-          echo "La valeur du contexte est : ${{ github.actor }}"
+          echo "La valeur du contexte est : ${{ github.actor }} - ${{ github.event_name }} - ${{ github.ref }}"
           # Add your actual script commands here
       
       - name: afficher-la-date 
