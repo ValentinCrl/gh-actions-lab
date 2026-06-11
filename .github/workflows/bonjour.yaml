@@ -2,10 +2,15 @@ name: Bonjour
 on: push
 
 jobs:
-  test:
+  initiation:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Bonjour script
+      - name: saluer-le-monde 
         run: |
           echo "Bonjour depuis GitHub Actions !"
+          # Add your actual script commands here
+      
+      - name: afficher-la-date 
+        run: |
+          echo "La date actuelle est : $(date)"
           # Add your actual script commands here
