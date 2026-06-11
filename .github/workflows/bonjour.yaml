@@ -1,8 +1,8 @@
-name: Bonjour
+name: Workflow d'initiation
 on: push
 
 jobs:
-  initiation:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: saluer-le-monde 
