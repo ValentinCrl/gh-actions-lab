@@ -13,9 +13,4 @@ jobs:
           echo "La valeur du contexte est : ${{ github.actor }} - ${{ github.event_name }} - ${{ github.ref }}"
           # Add your actual script commands here
       
-      - name: afficher-la-date 
-        run: |
-         curl -L \
-          -H "Accept: application/vnd.github+json" \
-          https://api.github.com/repos/OWNER/REPO/pulls/PULL_NUMBER
 
