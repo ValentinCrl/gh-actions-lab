@@ -1,0 +1,11 @@
+name: Bonjour
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Bonjour script
+        run: |
+          echo "Bonjour depuis GitHub Actions !"
+          # Add your actual script commands here
