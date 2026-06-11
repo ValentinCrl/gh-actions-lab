@@ -4,11 +4,11 @@ on:
     paths:
       - 'docs/**'   
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Ca marche
-        run: |
-          echo "Ca marche !"
-          # Add your actual script commands here
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Ca marche
+#         run: |
+#           echo "Ca marche !"
+#           # Add your actual script commands here
