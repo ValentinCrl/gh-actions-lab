@@ -1,0 +1,6 @@
+name: Workflow d'initiation
+on:
+  push:
+    paths:
+      - 'docs/**'   
+

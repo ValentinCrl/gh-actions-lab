@@ -1,0 +1,12 @@
+name: Scheduled Workflow
+on:
+  schedule:
+    # Exécution du lundi (1) au vendredi (5) à 09:00 UTC
+    - cron: '0 9 * * 1-5'
+  workflow_dispatch:
+    # Déclenchement manuel via l'interface GitHub
+    inputs:
+      logLevel:
+        description: 'Niveau de log'
+        required: false
+        default: 'warning'   
