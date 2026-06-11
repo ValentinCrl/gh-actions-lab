@@ -4,11 +4,16 @@ on:
     paths:
       - 'docs/**'   
 
-# jobs:
-#   test:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Ca marche
-#         run: |
-#           echo "Ca marche !"
-#           # Add your actual script commands here
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Lister les fichiers modifiés
+        run: |
+          echo "Fichiers modifiés par ce push :"
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
